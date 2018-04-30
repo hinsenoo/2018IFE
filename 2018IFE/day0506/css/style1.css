@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+span {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.li1 {
+    float: left;
+    margin-right: 4em;
+}
+
+.li2 {
+    margin-bottom: 1em;
+}
