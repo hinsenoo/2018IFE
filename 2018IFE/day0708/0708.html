@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uf-8">
+    <title>网页布局</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        header {
+            position: relative;
+            background: #333333;
+            width: 100%;
+            height: 100px;
+        }
+        
+        .nav1 {
+            float: right;
+        }
+        
+        .nav2 {
+            width: 100%;
+            height: 75px;
+            border-bottom: 1px solid #dddddd;
+            position: relative;
+        }
+        
+        .a1 {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 100px;
+            position: absolute;
+            left: 10%;
+        }
+        
+        .a2 {
+            color: white;
+            font-size: 18px;
+        }
+        
+        .blank {
+            width: 960px;
+            margin: 0 auto;
+            background: red;
+        }
+        
+        .box1 {
+            width: 100%;
+            height: 250px;
+            background: #66bb33;
+            position: relative;
+        }
+        
+        .ul1 {
+            list-style: none;
+            position: absolute;
+            bottom: 0px;
+            right: 20%;
+            padding: 0;
+        }
+        
+        .ul2 {
+            list-style: none;
+            position: absolute;
+            bottom: -1px;
+            left: 10%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .li1 {
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            border: 1px #333333 solid;
+            background: #b2dd99;
+        }
+        
+        .li2 {
+            text-indent: 0.5em;
+            padding-top: 10px;
+            width: 30px;
+            height: 40px;
+            display: inline-block;
+            border: 1px #333333 solid;
+            background: #e0f1d6;
+        }
+        
+        .li3 {
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            float: left;
+            border: 1px #dddddd solid;
+            background: #eeeeee;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .li4 {
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            float: left;
+            display: inline-block;
+            border: 1px #dddddd solid;
+            border-bottom: 1px white solid;
+            background: #eeeeee;
+            border-radius: 20px 20px 0 0;
+        }
+        
+        article {
+            width: 80%;
+            height: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        
+        .box2 {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .box3 {
+            margin: 0.5em;
+            line-height: 200px;
+            text-align: center;
+            flex: 1;
+            border: 1px #cccccc solid;
+        }
+        
+        footer {
+            bottom: 0px;
+            background: #666666;
+            width: 100%;
+            height: 120px;
+            text-align: center;
+        }
+        
+        p {
+            font-size: 20px;
+            padding-top: 10px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="blank">
+            <a class="a1" href="#">Logo</a>
+            <nav class="nav1">
+                <a class="a2" href="#">GitHub</a>
+                <a class="a2" href="#">Register</a>
+                <a class="a2" href="#">Login</a>
+            </nav>
+        </section>
+    </header>
+    <section class="box1">
+        <ul class="ul1">
+            <li class="li1">1</li>
+            <li class="li2">2</li>
+            <li class="li1">3</li>
+            <li class="li1">4</li>
+        </ul>
+    </section>
+    <nav class="nav2">
+        <ul class="ul2">
+            <li class="li4">HOME</li>
+            <li class="li3">PROFILE</li>
+            <li class="li3">ABOUT</li>
+        </ul>
+    </nav>
+    <article>
+        <section class="box2">
+            <section class="box3">This is Content 1</section>
+            <section class="box3">MaybeContent 2</section>
+            <section class="box3">Content 3</section>
+        </section>
+        <section class="box2">
+            <section class="box3">Content 4</section>
+            <section class="box3">Content 5</section>
+            <section class="box3">Content 6</section>
+            <section class="box3">Content 7</section>
+        </section>
+        <section class="box2">
+            <section class="box3">Content 8</section>
+            <section class="box3">Content 9</section>
+            <section class="box3">Content 10</section>
+        </section>
+    </article>
+    <footer>
+        <p>©&nbsp;2018&nbsp;ife.baidu.com</p>
+    </footer>
+</body>
+
+</html>
