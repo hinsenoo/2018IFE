@@ -1,0 +1,704 @@
+            * {
+                box-sizing: border-box;
+            }
+            
+            html {
+                height: 100%;
+                /*body 和 html
+    自适应浏览器高度*/
+            }
+            
+            body {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            
+            .sidebar {
+                width: 100px;
+                height: 100%;
+                background: #1d2530;
+                /*自适应浏览器高度*/
+                position: absolute;
+                left: 0px;
+                top: 0px;
+            }
+            
+            .sidebar .logo {
+                clear: both;
+                height: 100%;
+            }
+            
+            .sidebar .logo>img {
+                margin: 15%;
+            }
+            
+            .sidebar-img {
+                /*固定在浏览器底部*/
+                position: fixed;
+                left: 25px;
+                bottom: 20px;
+            }
+            /*最左侧栏*/
+            /*第二个侧栏*/
+            
+            .aside {
+                width: 250px;
+                height: 100%;
+                background: #232c3d;
+                position: absolute;
+                top: 0;
+                left: 100px;
+            }
+            
+            .aside .menu {
+                padding: 0;
+                list-style: none;
+                width: 200px;
+                margin: 0 auto;
+                margin-top: 10px;
+                border-bottom: .4px solid rgba(204, 204, 204, 0.3);
+                padding-bottom: 10px;
+            }
+            
+            .aside .title {
+                font-weight: bold;
+                text-transform: uppercase;
+                position: relative;
+                color: #5b6779;
+                font-size: 15px;
+                line-height: 40px;
+            }
+            
+            .aside .title>img {
+                position: absolute;
+                right: 0;
+                bottom: 12px;
+            }
+            
+            .aside .item {
+                position: relative;
+                font-size: 14px;
+                line-height: 36px;
+                color: #b7c0cd;
+            }
+            
+            .aside .item>img {
+                position: absolute;
+                right: 0;
+                bottom: 12px;
+            }
+            
+            .aside .menu2 {
+                padding: 0;
+                list-style: none;
+                width: 200px;
+                margin: 0 auto;
+                border-bottom: .4px solid rgba(204, 204, 204, 0.3);
+                padding-bottom: 10px;
+            }
+            
+            .menu2 .item {
+                position: relative;
+                font-size: 14px;
+                line-height: 36px;
+                color: #b7c0cd;
+                text-indent: 2em;
+            }
+            
+            .menu2 .img1 {
+                position: absolute;
+                right: 0;
+                bottom: 12px;
+            }
+            
+            .menu2 .img2 {
+                position: absolute;
+                left: 0;
+                bottom: 12px;
+            }
+            
+            .aside .menu3 {
+                padding: 0;
+                list-style: none;
+                width: 200px;
+                margin: 0 auto;
+            }
+            
+            .aside .img3 {
+                position: fixed;
+                bottom: 0px;
+                left: 120px;
+                bottom: 20px;
+            }
+            /*右边部分*/
+            
+            header {
+                width: 111%;
+                height: 60px;
+                border-bottom: .4px solid #ccc;
+            }
+            
+            h1 {
+                line-height: 40px;
+                font-size: 24px;
+                font-weight: 500;
+                margin: 20px;
+            }
+            
+            .main {
+                position: absolute;
+                left: 350px;
+                top: 0;
+                width: 70%;
+                height: 100%;
+            }
+            
+            .main .user {
+                position: fixed;
+                top: 2px;
+                right: 20px;
+                width: 200px;
+                height: 50px;
+            }
+            
+            .user>img {
+                float: left;
+                margin: 10px 5px 0 0;
+            }
+            
+            .user>p {
+                color: #2399f1;
+                font-size: 16px;
+            }
+            
+            .user>p>span {
+                color: #b5b5b5;
+                font-size: 14px;
+            }
+            
+            .img4 {
+                position: absolute;
+                right: -100px;
+                top: 38px;
+            }
+            /*好友框*/
+            
+            .main .left {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                height: 88%;
+                width: 37%;
+                border-right: .4px solid #ccc;
+            }
+            
+            .main .left .search {
+                margin: 0;
+                padding: 0;
+                position: relative;
+                width: 100%;
+                height: 60px;
+                border-bottom: .4px solid #ccc;
+            }
+            
+            .input1 {
+                color: #ccc;
+                width: 80%;
+                height: 30px;
+                font-size: 14px;
+                text-indent: 1em;
+                border: 1px solid#ccc;
+                border-radius: 3px;
+                margin: 16px 10% 0 10%;
+            }
+            
+            .button1 {
+                position: absolute;
+                right: 12%;
+                top: 22px;
+                width: 16px;
+                height: 16px;
+                border: 0px;
+                background-color: transparent;
+                background-image: url(img/Search-icon.png)
+            }
+            /*聊天好友框*/
+            
+            .chat0 {
+                width: 410px;
+                height: 100%;
+                overflow: hidden;
+            }
+            
+            .chat {
+                width: 430px;
+                height: 90%;
+                overflow-y: scroll;
+                overflow-x: hidden;
+            }
+            
+            .chat1 {
+                position: relative;
+                width: 100%;
+                height: 150px;
+                border-bottom: .4px solid #ccc;
+                border-left: 5px solid #2598f1;
+            }
+            
+            .chat1-1>img {
+                margin: 15px;
+                float: left;
+            }
+            
+            .chat1-1>p {
+                position: absolute;
+                top: 8px;
+                left: 75px;
+                color: #2399f1;
+                font-size: 16px;
+            }
+            
+            .chat1-1>p>span {
+                color: #b5b5b5;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            
+            .chat1-1>p>a {
+                font-weight: bold;
+                font-size: 14px;
+                color: #95a6b6;
+                position: absolute;
+                top: 2px;
+                left: 280px;
+            }
+            
+            .chat1-1>p::before {
+                content: "●  ";
+                color: #2399f1;
+            }
+            
+            .word1 {
+                position: absolute;
+                bottom: 40px;
+                left: 15px;
+                font-size: 14px;
+                line-height: 19px;
+                color: #585d68;
+            }
+            
+            .word1>img {
+                position: absolute;
+                bottom: 8px;
+                left: 340px;
+            }
+            
+            .chat2 {
+                position: relative;
+                width: 100%;
+                height: 150px;
+                border-bottom: .4px solid #ccc;
+            }
+            
+            .chat2-1>img {
+                margin: 15px;
+                float: left;
+            }
+            
+            .chat2-1>p {
+                position: absolute;
+                top: 8px;
+                left: 75px;
+                color: #585d68;
+                font-size: 16px;
+            }
+            
+            .chat2-1>p>span {
+                color: #b5b5b5;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            
+            .chat2-1>p>a {
+                font-weight: bold;
+                font-size: 14px;
+                color: #95a6b6;
+                position: absolute;
+                top: 2px;
+                left: 240px;
+            }
+            
+            .word2 {
+                position: absolute;
+                bottom: 30px;
+                left: 15px;
+                font-size: 14px;
+                line-height: 19px;
+                color: #585d68;
+            }
+            
+            .chat2-2>img {
+                margin: 15px;
+                float: left;
+            }
+            
+            .chat2-2>p {
+                position: absolute;
+                top: 8px;
+                left: 75px;
+                color: #585d68;
+                font-size: 16px;
+            }
+            
+            .chat2-2>p>span {
+                color: #b5b5b5;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            
+            .chat2-2>p>a {
+                font-weight: bold;
+                font-size: 14px;
+                color: #95a6b6;
+                position: absolute;
+                top: 2px;
+                left: 285px;
+            }
+            
+            .chat3 {
+                position: relative;
+                width: 100%;
+                height: 150px;
+            }
+            
+            .chat3-1>img {
+                margin: 15px;
+                float: left;
+            }
+            
+            .chat3-1>p {
+                position: absolute;
+                top: 8px;
+                left: 75px;
+                color: #585d68;
+                font-size: 16px;
+            }
+            
+            .chat3-1>p>span {
+                color: #b5b5b5;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            
+            .chat3-1>p>a {
+                font-weight: bold;
+                font-size: 14px;
+                color: #95a6b6;
+                position: absolute;
+                top: 2px;
+                left: 240px;
+            }
+            
+            .word2 {
+                position: absolute;
+                bottom: 30px;
+                left: 15px;
+                font-size: 14px;
+                line-height: 19px;
+                color: #585d68;
+            }
+            /*右侧聊天框*/
+            
+            .right {
+                width: 74%;
+                height: 88%;
+                position: absolute;
+                left: 412px;
+                top: 80px;
+            }
+            
+            .right .nav {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 60px;
+                border-bottom: .4px solid #ccc;
+            }
+            
+            .right .nav>p {
+                text-indent: 2em;
+                line-height: 60px;
+                color: #585c67;
+                font-size: 18px;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .right .nav>p::after {
+                content: "●  ";
+                color: #1cb737;
+            }
+            
+            .control li:first-child a {
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+            
+            .control li:last-child a {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+            
+            .control li a img {
+                width: 16px;
+                height: 16px;
+                margin-top: 6px;
+            }
+            
+            .control li {
+                display: inline-block;
+                margin-left: -5px;
+            }
+            
+            .control li a {
+                display: flex;
+                justify-content: center;
+                width: 36px;
+                height: 32px;
+                border: 1px solid #e6e7ec;
+            }
+            
+            .control {
+                float: right;
+            }
+            
+            .abc {
+                float: right;
+                margin-top: 20px;
+            }
+            
+            .abc .divide {
+                margin-left: 20px;
+                color: #b5b5b5;
+                display: inline;
+                float: left;
+            }
+            
+            .abc .text {
+                margin: 0 20px;
+                color: #b5b5b5;
+                font-family: "ProximaNova-Regular";
+                font-size: 12px;
+                display: inline;
+            }
+            
+            .fr {
+                float: right;
+            }
+            
+            .icon-tools {
+                float: right;
+            }
+            
+            .icon-tools li {
+                display: inline-block;
+                margin-left: -5px;
+            }
+            
+            .icon-tools li a {
+                display: flex;
+                justify-content: center;
+                width: 36px;
+                height: 32px;
+                border: 1px solid #e6e7ec;
+            }
+            
+            .icon-tools li:first-child a {
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+            
+            .icon-tools li:last-child a {
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+            
+            .icon-tools li a img {
+                width: 16px;
+                height: 16px;
+                margin-top: 5px;
+            }
+            
+            ul,
+            ol,
+            li {
+                list-style: none;
+            }
+            
+            .box {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            /* 聊天块*/
+            
+            .part {
+                width: 100%;
+                height: 450px;
+            }
+            
+            .part1 {
+                width: 700px;
+                height: 450px;
+                overflow: hidden;
+            }
+            
+            .part1 {
+                width: 850px;
+                height: 450px;
+                overflow: auto;
+            }
+            
+            .box1 {
+                position: relative;
+            }
+            
+            .you-name,
+            time {
+                font-family: 'ProximaNova-Regular';
+                font-size: 14px;
+                font-weight: 600;
+                color: #585d68;
+            }
+            
+            .box1 p {
+                font-family: "ProximaNova-Regular";
+                font-size: 12px;
+                line-height: 16px;
+                color: #585d68;
+            }
+            
+            .box1 img {
+                float: left;
+                margin: 20px 10px 21px 30px;
+            }
+            
+            .gray-line {
+                border-top: 2px solid #e4e7eb;
+            }
+            
+            .gray-line span {
+                color: #e4e7eb;
+                font-family: 'ProximaNova-Regular';
+                font-size: 14px;
+                top: -10px;
+                left: 50%;
+                position: relative;
+                background: #fff;
+                padding: 0 16px;
+            }
+            
+            .pic-send {
+                margin-top: 10px;
+                padding-left: 85px;
+            }
+            
+            .pic-send .img {
+                position: relative;
+                display: inline-block;
+                margin-right: 13px;
+                width: 136px;
+                height: 80px;
+            }
+            
+            .pic-send .img:hover a.img-mask {
+                opacity: 0.6!important;
+                transition: all 0.6s;
+            }
+            
+            .pic-send .img1 {
+                background: url("img/photo2.png") no-repeat;
+                background-size: contain;
+            }
+            
+            .pic-send .img2 {
+                background: url("img/Photo1.png") no-repeat;
+                background-size: contain;
+            }
+            
+            .img-mask {
+                opacity: 0;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background: #7d7b7c;
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            
+            .img-mask img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .divide-blue {
+                border-bottom: 2px solid #1d94ed;
+            }
+            
+            .divide-blue,
+            .divide-gray {
+                margin-top: 15px;
+                height: 1px;
+                text-align: center;
+                margin-bottom: 8px;
+            }
+            
+            .divide-blue span {
+                color: #1d94ed;
+                font-family: 'ProximaNova-Regular';
+                font-size: 14px;
+            }
+            
+            .divide-blue span,
+            .divide-gray span {
+                position: relative;
+                top: -10px;
+                background: #fff;
+                padding: 0 16px;
+            }
+            
+            .reply {
+                display: flex;
+                margin: 28px 30px 20px 30px;
+            }
+            
+            .reply input[type="submit"] {
+                flex-basis: 54px;
+                width: 54px;
+                height: 54px;
+                line-height: 54px;
+                text-align: center;
+                background: url(../imgs/icon2.png) center no-repeat;
+                border: 1px solid #ced0da;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+            
+            .reply input[type="text"] {
+                vertical-align: top;
+                flex: 1;
+                width: 100%;
+                height: 54px;
+                padding: 18px;
+                border: 1px solid #ced0da;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
