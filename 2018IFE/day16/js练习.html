@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0"placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn" onclick="add()">加</button>
+    <button id="minus-btn" onclick="decrease()">减</button>
+    <button id="times-btn" onclick="mul()">乘</button>
+    <button id="divide-btn" onclick="division()">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        function add(){
+            var x,y,sum;
+            x = document.getElementById("first-number").value;
+            y = document.getElementById("second-number").value;
+            sum = parseFloat(x) + parseFloat(y); 
+            document.getElementById("result").innerHTML ="运算结果" + sum;
+        }
+        function decrease(){
+            var x,y,sum;
+            x = document.getElementById("first-number").value;
+            y = document.getElementById("second-number").value;
+            sum = parseFloat(x) - parseFloat(y); 
+            document.getElementById("result").innerHTML ="运算结果" + sum;
+        }
+        function mul(){
+            var x,y,sum;
+            x = document.getElementById("first-number").value;
+            y = document.getElementById("second-number").value;
+            sum = parseFloat(x) * parseFloat(y); 
+            document.getElementById("result").innerHTML ="运算结果" + sum;
+        }
+        function division(){
+            var x,y,sum;
+            x = document.getElementById("first-number").value;
+            y = document.getElementById("second-number").value;
+            sum = parseFloat(x) / parseFloat(y); 
+            document.getElementById("result").innerHTML ="运算结果" + sum;
+        }
+        
+    </script>
+</body>
+</html>
